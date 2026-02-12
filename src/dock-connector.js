@@ -2,7 +2,7 @@
  * ⚓ Athena Dock Connector v7 (Universal - Docked Track)
  * Handles communication between the generated site (iframe) and the Athena Dock (parent).
  */
-(function() {
+(function () {
     console.log("⚓ Athena Dock Connector v7 Active");
 
     // --- 1. CONFIGURATION & STATE ---
@@ -56,7 +56,7 @@
     // --- 4. COMMUNICATION (OUTBOUND) ---
     function notifyDock(fullData = null) {
         if (fullData) lastKnownData = fullData;
-        
+
         const structure = {
             sections: scanSections(),
             layouts: lastKnownData?.layout_settings?.[0] || lastKnownData?.layout_settings || {},
@@ -79,7 +79,7 @@
         if (type === 'DOCK_UPDATE_COLOR') {
             const isDark = document.documentElement.classList.contains('dark');
             const currentTheme = isDark ? 'dark' : 'light';
-            
+
             if (key === 'theme') {
                 if (value === 'dark') {
                     document.documentElement.classList.add('dark');
@@ -163,6 +163,14 @@
             }
         }
 
+        // Section Style Update
+        if (type === 'DOCK_UPDATE_SECTION_STYLE') {
+            const el = document.querySelector(`[data-dock-section="${section}"]`);
+            if (el) {
+                el.style[key] = value;
+            }
+        }
+
         // Style Swap
         if (type === 'DOCK_SWAP_STYLE') {
             console.log("🎨 Swapping global style to:", value);
@@ -180,12 +188,12 @@
                 if (elBind.file !== file || elBind.index !== index || elBind.key !== key) return;
 
                 const dockType = el.getAttribute('data-dock-type') || (el.tagName === 'IMG' || el.tagName === 'VIDEO' ? 'media' : 'text');
-                
+
                 if (dockType === 'media') {
                     const src = (value && !value.startsWith('http') && !value.startsWith('/') && !value.startsWith('data:'))
                         ? `${baseUrl}images/${value}`.replace(/\/+/g, '/')
                         : (value || "");
-                    
+
                     const mediaEl = (el.tagName === 'IMG' || el.tagName === 'VIDEO') ? el : el.querySelector('img, video');
                     if (mediaEl) {
                         mediaEl.src = src;
@@ -256,7 +264,7 @@
                 body: file
             });
             const uploadData = await uploadRes.json();
-            
+
             if (uploadData.success) {
                 await fetch(getApiUrl('__athena/update-json'), {
                     method: 'POST',
@@ -279,15 +287,15 @@
 
             const binding = JSON.parse(target.getAttribute('data-dock-bind'));
             const dockType = target.getAttribute('data-dock-type') || (
-                (binding.key && (binding.key.toLowerCase().includes('foto') || 
-                                 binding.key.toLowerCase().includes('image') || 
-                                 binding.key.toLowerCase().includes('img') || 
-                                 binding.key.toLowerCase().includes('afbeelding') || 
-                                 binding.key.toLowerCase().includes('video'))) ? 'media' : 'text'
+                (binding.key && (binding.key.toLowerCase().includes('foto') ||
+                    binding.key.toLowerCase().includes('image') ||
+                    binding.key.toLowerCase().includes('img') ||
+                    binding.key.toLowerCase().includes('afbeelding') ||
+                    binding.key.toLowerCase().includes('video'))) ? 'media' : 'text'
             );
 
             let currentValue = target.getAttribute('data-dock-current') || target.innerText;
-            
+
             if (dockType === 'link') {
                 currentValue = {
                     label: target.getAttribute('data-dock-label') || target.innerText,

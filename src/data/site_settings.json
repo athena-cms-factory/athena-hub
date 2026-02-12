@@ -14,6 +14,8 @@
     "header_visible": true,
     "header_show_title": true,
     "header_show_logo": true,
-    "header_show_tagline": true
+    "header_show_tagline": true,
+    "light_bg_color": "#d0d1d2",
+    "light_header_color": "#d0d1d2"
   }
 ]
