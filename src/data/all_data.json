@@ -21,6 +21,40 @@
       "linkedin_url": "contact-laptop-gent.png"
     }
   ],
+  "diensten": [
+    {
+      "titel": "Basis",
+      "beschrijving": "De meest voordelige start. Wij zetten je online, jij focust op je zaak.",
+      "prijs": 495,
+      "kenmerken": "Responsive design (mobiel + desktop), Tot 3 secties (hero/diensten/contact), Geen CMS — tekstaanpassingen door ons (tegen betaling), Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Levertijd: 24h",
+      "recommended": false,
+      "order": 0
+    },
+    {
+      "titel": "Starter",
+      "beschrijving": "Snel online met een professionele one-page website. Ideaal voor startende zelfstandigen en freelancers.",
+      "prijs": 750,
+      "kenmerken": "Responsive design (mobiel + desktop), Tot 5 secties (hero/diensten/contact/...), Google Sheets CMS — zelf content beheren, Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Handleiding in het Nederlands, Levertijd: 24-48 uur",
+      "recommended": false,
+      "order": 1
+    },
+    {
+      "titel": "Professional",
+      "beschrijving": "Compleet & professioneel. De populairste keuze voor gevestigde KMO's, kappers, restaurants en aannemers.",
+      "prijs": 1495,
+      "kenmerken": "Alles uit Starter, Tot 10 secties met team/reviews/prijslijst/FAQ, Visuele editor — klik en wijzig zelf, Professionele stockfoto's, Contactformulier + WhatsApp button, Google Maps integratie, Social media koppeling, 2 revisierondes, Levertijd: 2-3 werkdagen",
+      "recommended": true,
+      "order": 2
+    },
+    {
+      "titel": "Business",
+      "beschrijving": "Alles wat je nodig hebt. Voor winkels, webshops en bedrijven die online willen verkopen.",
+      "prijs": 2495,
+      "kenmerken": "Alles uit Professional, Onbeperkte secties, Productcatalogus met prijzen, Betalingen via Mollie (Bancontact/iDEAL/creditcard), Meertalig (NL/FR/EN), Google Analytics + cookie banner (GDPR), Custom domein setup, 30 dagen gratis support, 3 revisierondes, Levertijd: 3-5 werkdagen",
+      "recommended": false,
+      "order": 3
+    }
+  ],
   "display_config": {
     "site_name": "athena-hub",
     "sections": {
@@ -202,6 +236,17 @@
           "tijdsduur",
           "uitleg"
         ]
+      },
+      {
+        "table_name": "diensten",
+        "columns": [
+          "titel",
+          "beschrijving",
+          "prijs",
+          "kenmerken",
+          "recommended",
+          "order"
+        ]
       }
     ],
     "sections": [
@@ -288,6 +333,20 @@
           "linkedin": "string",
           "location": "string"
         }
+      },
+      {
+        "id": "diensten",
+        "title": "Onze Pakketten",
+        "fields": {
+          "items": [
+            {
+              "titel": "string",
+              "beschrijving": "text",
+              "prijs": "number",
+              "kenmerken": "text"
+            }
+          ]
+        }
       }
     ]
   },
@@ -298,10 +357,16 @@
     "showcase",
     "innovatie",
     "proces",
+    "diensten",
     "contact"
   ],
   "section_settings": {
-    "site_name": "athena-hub"
+    "site_name": "athena-hub",
+    "diensten": {
+      "title": "Diensten",
+      "subtitle": "Heldere pakketten voor een eerlijke prijs.",
+      "domain_info": "Aangezien we werken op het krachtige GitHub platform, is hosting gratis. Je betaalt enkel voor je eigen domeinnaam (bijv. .be of .com), wat meestal tussen de €15 en €30 per jaar kost. Wij begeleiden je bij de aankoop en de koppeling is inbegrepen in elk pakket."
+    }
   },
   "showcase": [
     {
@@ -326,7 +391,7 @@
       "image": "hero-1770476346310.jpeg"
     },
     {
-      "name": "Academy 1",
+      "name": "Academy-1",
       "category": "Educatie",
       "description": "Een modern leerplatform voor cursussen en trainingen.",
       "link": "https://athena-cms-factory.github.io/academy-1",
@@ -336,7 +401,7 @@
       "name": "De Schaar",
       "category": "Beauty & Wellness",
       "description": "Een moderne website voor kapsalons met focus op sfeer en team-presentatie.",
-      "link": "https://athena-cms-factory.github.io/de-schaar/",
+      "link": "https://athena-cms-factory.github.io/de-schaar-site",
       "image": "technische.png"
     },
     {
