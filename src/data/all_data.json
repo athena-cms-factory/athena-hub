@@ -16,7 +16,7 @@
       "titel": "Klaar om uw online aanwezigheid te transformeren?",
       "email": "athena.cms.factory@gmail.be",
       "telefoon": "",
-      "locatie": "Gent, België",
+      "locatie": "Gent, Belgi\u00eb",
       "btw_nummer": "",
       "linkedin_url": "contact-laptop-gent.png"
     }
@@ -26,7 +26,7 @@
       "titel": "Basis",
       "beschrijving": "De meest voordelige start. Wij zetten je online, jij focust op je zaak.",
       "prijs": 495,
-      "kenmerken": "Responsive design (mobiel + desktop), Tot 3 secties (hero/diensten/contact), Geen CMS — tekstaanpassingen door ons (tegen betaling), Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Levertijd: 24h",
+      "kenmerken": "Responsive design (mobiel + desktop), Tot 3 secties (hero/diensten/contact), Geen CMS \u2014 tekstaanpassingen door ons (tegen betaling), Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Levertijd: 24h",
       "recommended": false,
       "order": 0
     },
@@ -34,7 +34,7 @@
       "titel": "Starter",
       "beschrijving": "Snel online met een professionele one-page website. Ideaal voor startende zelfstandigen en freelancers.",
       "prijs": 750,
-      "kenmerken": "Responsive design (mobiel + desktop), Tot 5 secties (hero/diensten/contact/...), Google Sheets CMS — zelf content beheren, Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Handleiding in het Nederlands, Levertijd: 24-48 uur",
+      "kenmerken": "Responsive design (mobiel + desktop), Tot 5 secties (hero/diensten/contact/...), Google Sheets CMS \u2014 zelf content beheren, Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Handleiding in het Nederlands, Levertijd: 24-48 uur",
       "recommended": false,
       "order": 1
     },
@@ -42,7 +42,7 @@
       "titel": "Professional",
       "beschrijving": "Compleet & professioneel. De populairste keuze voor gevestigde KMO's, kappers, restaurants en aannemers.",
       "prijs": 1495,
-      "kenmerken": "Alles uit Starter, Tot 10 secties met team/reviews/prijslijst/FAQ, Visuele editor — klik en wijzig zelf, Professionele stockfoto's, Contactformulier + WhatsApp button, Google Maps integratie, Social media koppeling, 2 revisierondes, Levertijd: 2-3 werkdagen",
+      "kenmerken": "Alles uit Starter, Tot 10 secties met team/reviews/prijslijst/FAQ, Visuele editor \u2014 klik en wijzig zelf, Professionele stockfoto's, Contactformulier + WhatsApp button, Google Maps integratie, Social media koppeling, 2 revisierondes, Levertijd: 2-3 werkdagen",
       "recommended": true,
       "order": 2
     },
@@ -73,10 +73,10 @@
   },
   "footer": [
     {
-      "footer_text": "© 2026 Athena CMS Factory - Kracht door Eenvoud.",
+      "footer_text": "\u00a9 2026 Athena CMS Factory - Kracht door Eenvoud.",
       "email": "athena.cms.factory@gmail.be",
       "telefoon": "+32 (0) 470 00 00 00",
-      "adres": "Gent, België",
+      "adres": "Gent, Belgi\u00eb",
       "facebook_url": "#",
       "linkedin_url": "#",
       "instagram_url": "#",
@@ -129,7 +129,6 @@
     "showcase:3:link": "https://athena-cms-factory.github.io/academy-1",
     "showcase:4:link": "https://athena-cms-factory.github.io/de-schaar",
     "showcase:5:link": "https://athena-cms-factory.github.io/kdc-it-advies",
-    "showcase:6:link": "https://athena-cms-factory.github.io/pure-bloom-floral",
     "showcase:7:link": "https://athena-cms-factory.github.io/athena-pro",
     "showcase:8:link": "https://athena-cms-factory.github.io/bakkerij-de-graankorrel",
     "showcase:9:link": "https://athena-cms-factory.github.io/cloud-architects",
@@ -161,7 +160,7 @@
       "titel": "Starter",
       "beschrijving": "Snel online met een professionele one-page website. Ideaal voor startende zelfstandigen en freelancers.",
       "prijs": 750,
-      "kenmerken": "Responsive design (mobiel + desktop), Tot 5 secties (hero/diensten/contact/...), Google Sheets CMS — zelf content beheren, Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Handleiding in het Nederlands, Levertijd: 24-48 uur",
+      "kenmerken": "Responsive design (mobiel + desktop), Tot 5 secties (hero/diensten/contact/...), Google Sheets CMS \u2014 zelf content beheren, Gratis hosting (geen maandelijkse kosten), Basis SEO-setup, Handleiding in het Nederlands, Levertijd: 24-48 uur",
       "recommended": false,
       "order": 1
     },
@@ -169,7 +168,7 @@
       "titel": "Professional",
       "beschrijving": "Compleet & professioneel. De populairste keuze voor gevestigde KMO's, kappers, restaurants en aannemers.",
       "prijs": 1495,
-      "kenmerken": "Alles uit Starter, Tot 10 secties met team/reviews/prijslijst/FAQ, Visuele editor — klik en wijzig zelf, Professionele stockfoto's, Contactformulier + WhatsApp button, Google Maps integratie, Social media koppeling, 2 revisierondes, Levertijd: 2-3 werkdagen",
+      "kenmerken": "Alles uit Starter, Tot 10 secties met team/reviews/prijslijst/FAQ, Visuele editor \u2014 klik en wijzig zelf, Professionele stockfoto's, Contactformulier + WhatsApp button, Google Maps integratie, Social media koppeling, 2 revisierondes, Levertijd: 2-3 werkdagen",
       "recommended": true,
       "order": 2
     },
@@ -391,7 +390,7 @@
     "diensten": {
       "title": "Diensten",
       "subtitle": "Heldere pakketten voor een eerlijke prijs.",
-      "domain_info": "Aangezien we werken op het krachtige GitHub platform, is hosting gratis. Je betaalt enkel voor je eigen domeinnaam (bijv. .be of .com), wat meestal tussen de €15 en €30 per jaar kost. Wij begeleiden je bij de aankoop en de koppeling is inbegrepen in elk pakket."
+      "domain_info": "Aangezien we werken op het krachtige GitHub platform, is hosting gratis. Je betaalt enkel voor je eigen domeinnaam (bijv. .be of .com), wat meestal tussen de \u20ac15 en \u20ac30 per jaar kost. Wij begeleiden je bij de aankoop en de koppeling is inbegrepen in elk pakket."
     }
   },
   "showcase": [
@@ -436,13 +435,6 @@
       "description": "Strategisch IT-advies en digitale transformatie voor KMO's.",
       "link": "https://athena-cms-factory.github.io/kdc-it-advies",
       "image": "showcase-kdc-it-advies.webp"
-    },
-    {
-      "name": "Pure Bloom Floral",
-      "category": "Retail / Lifestyle",
-      "description": "Exclusieve bloemencreaties en event-styling.",
-      "link": "https://athena-cms-factory.github.io/pure-bloom-floral",
-      "image": "showcase-pure-bloom-floral.webp"
     },
     {
       "name": "Athena Pro",
