@@ -8,5 +8,10 @@
     "titel": "Extreme Snelheid (Vite + React)",
     "description": "Onze sites laden in een fractie van een seconde. Goed voor uw SEO en uw klanten.",
     "icon": "Zap"
+  },
+  {
+    "titel": "AI-Gegenereerd in Minuten",
+    "description": "Vul één Google Sheet in en onze AI bouwt een complete, professionele website. Geen wachttijden, geen dure ontwikkelaars.",
+    "icon": "Robot"
   }
 ]
