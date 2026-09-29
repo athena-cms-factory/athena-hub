@@ -9,8 +9,8 @@
     let lastKnownData = null;
 
     const getApiUrl = (path) => {
-        const baseUrl = window.location.pathname.split('/').slice(0, -1).join('/') || '/';
-        return (baseUrl + '/' + path).replace(new RegExp('/+', 'g'), '/');
+        const base = import.meta.env.BASE_URL || '/';
+        return (base + '/' + path).replace(new RegExp('/+', 'g'), '/');
     };
 
     // 🔱 v8.8 Universal Binding Parser
@@ -205,7 +205,7 @@
         if (type === 'DOCK_UPDATE_TEXT') {
             const bindStr = JSON.stringify({ file, index, key });
             const elements = document.querySelectorAll(`[data-dock-bind]`);
-            const baseUrl =  (window.location.pathname.split('/').slice(0, -1).join('/') || '/')  || '/';
+            const baseUrl = import.meta.env.BASE_URL || '/';
 
             elements.forEach(el => {
                 const elBind = parseBinding(el.getAttribute('data-dock-bind'));
