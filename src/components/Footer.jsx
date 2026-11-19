@@ -51,7 +51,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
       }}
     >
       {/* Gloeiende accent-lijn bovenaan */}
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-cyan-300 to-transparent opacity-70"></div>
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#a8d8f0] to-transparent opacity-70"></div>
 
       {/* Groot watermerk */}
       <span
@@ -67,13 +67,13 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
         {/* --- CTA-bloc --- */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 pb-14 border-b border-white/10">
           <div className="max-w-3xl">
-            <p className="text-[10px] uppercase tracking-[0.35em] text-cyan-300 mb-6 flex items-center gap-3" style={monoFont}>
-              <span className="inline-block w-8 h-px bg-cyan-300/70"></span>
+            <p className="text-[10px] uppercase tracking-[0.35em] text-[#a8d8f0] mb-6 flex items-center gap-3" style={monoFont}>
+              <span className="inline-block w-8 h-px bg-[#a8d8f0]/70"></span>
                 04 / Samen bouwen
             </p>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-white" style={displayFont}>
               Uw idee.<br />
-              <em className="text-amber-300 not-italic">Onze bouwstenen.</em>
+              <em className="text-[#a8d8f0] not-italic">Onze bouwstenen.</em>
             </h2>
             <p className="mt-6 text-base md:text-lg text-slate-400 max-w-xl leading-relaxed">
               Van een Google Sheet tot een live site. Vertel ons wat u voor ogen heeft — wij zetten het om in iets dat werkt.
@@ -82,7 +82,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
           <a
             href="#contact"
             onClick={scrollTo('contact')}
-            className="group inline-flex items-center gap-4 self-start lg:self-auto px-8 py-4 rounded-full bg-cyan-300 text-slate-950 font-bold text-sm transition-all duration-300 hover:bg-amber-300 hover:shadow-[0_0_40px_-8px_rgba(253,224,71,.6)]"
+            className="group inline-flex items-center gap-4 self-start lg:self-auto px-8 py-4 rounded-full bg-accent text-white font-bold text-sm transition-all duration-300 hover:bg-[#a8d8f0] hover:text-slate-950 hover:shadow-[0_0_40px_-8px_rgba(168,216,240,.55)]"
           >
             Start uw project
             <i className="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
@@ -120,7 +120,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-10 h-10 rounded-lg border border-white/15 flex items-center justify-center text-slate-400 hover:bg-cyan-300 hover:border-cyan-300 hover:text-slate-950 transition-all duration-300"
+                    className="w-10 h-10 rounded-lg border border-white/15 flex items-center justify-center text-slate-400 hover:bg-[#a8d8f0] hover:border-[#a8d8f0] hover:text-slate-950 transition-all duration-300"
                   >
                     <i className={`fa-brands ${s.icon} text-sm`}></i>
                   </a>
@@ -131,7 +131,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
 
           {/* Navigatie */}
           <nav className="lg:col-span-3" aria-label="Footer navigatie">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-cyan-300 mb-7" style={monoFont}>
+            <h3 className="text-[10px] uppercase tracking-[0.3em] text-[#a8d8f0] mb-7" style={monoFont}>
               01 / Navigator
             </h3>
             <ul className="space-y-3 text-sm font-medium">
@@ -140,9 +140,9 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
                   <a
                     href={`#${item.id}`}
                     onClick={scrollTo(item.id)}
-                    className="text-slate-300 hover:text-cyan-200 transition-colors flex items-center gap-3 group"
+                    className="text-slate-300 hover:text-[#a8d8f0] transition-colors flex items-center gap-3 group"
                   >
-                    <span className="w-1 h-1 bg-amber-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="w-1 h-1 bg-[#a8d8f0] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item.label}
                   </a>
                 </li>
@@ -152,16 +152,16 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
 
           {/* Contact */}
           <div className="lg:col-span-4">
-            <h3 className="text-[10px] uppercase tracking-[0.3em] text-cyan-300 mb-7" style={monoFont}>
+            <h3 className="text-[10px] uppercase tracking-[0.3em] text-[#a8d8f0] mb-7" style={monoFont}>
               02 / Contact
             </h3>
             <ul className="space-y-5 text-sm">
               {footer.email && (
                 <li className="flex items-start gap-4">
-                  <i className="fa-solid fa-envelope text-cyan-300 mt-1 w-4"></i>
+                  <i className="fa-solid fa-envelope text-[#a8d8f0] mt-1 w-4"></i>
                   <a
                     href={`mailto:${footer.email}`}
-                    className="text-slate-200 hover:text-cyan-200 transition-colors break-all"
+                    className="text-slate-200 hover:text-[#a8d8f0] transition-colors break-all"
                     data-dock-type="text"
                     data-dock-bind="footer.0.email"
                   >
@@ -171,10 +171,10 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
               )}
               {footer.telefoon && (
                 <li className="flex items-start gap-4">
-                  <i className="fa-solid fa-phone text-cyan-300 mt-1 w-4"></i>
+                  <i className="fa-solid fa-phone text-[#a8d8f0] mt-1 w-4"></i>
                   <a
                     href={`tel:${footer.telefoon.replace(/[^+\d]/g, '')}`}
-                    className="text-slate-200 hover:text-cyan-200 transition-colors"
+                    className="text-slate-200 hover:text-[#a8d8f0] transition-colors"
                     data-dock-type="text"
                     data-dock-bind="footer.0.telefoon"
                   >
@@ -184,7 +184,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
               )}
               {footer.adres && (
                 <li className="flex items-start gap-4">
-                  <i className="fa-solid fa-location-dot text-cyan-300 mt-1 w-4"></i>
+                  <i className="fa-solid fa-location-dot text-[#a8d8f0] mt-1 w-4"></i>
                   <span className="text-slate-300" data-dock-type="text" data-dock-bind="footer.0.adres">
                     {footer.adres}
                   </span>
@@ -211,7 +211,7 @@ const Footer = ({ siteSettings = {}, footerData = {}, data }) => {
             <button
               onClick={scrollToTop}
               aria-label="Terug naar boven"
-              className="w-9 h-9 rounded-lg border border-white/15 flex items-center justify-center text-slate-400 hover:bg-cyan-300 hover:border-cyan-300 hover:text-slate-950 transition-all duration-300"
+              className="w-9 h-9 rounded-lg border border-white/15 flex items-center justify-center text-slate-400 hover:bg-[#a8d8f0] hover:border-[#a8d8f0] hover:text-slate-950 transition-all duration-300"
             >
               <i className="fa-solid fa-arrow-up text-xs"></i>
             </button>
