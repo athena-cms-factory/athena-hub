@@ -49,8 +49,8 @@ const ProductSection = ({ sectionName, items, sectionStyle, setSelectedPackage, 
           </div>
         </div>
 
-        {/* Pricing/Service Cards - Flexible and Centered */}
-        <div className="flex flex-wrap justify-center gap-8">
+        {/* Pricing/Service Cards - 4 → 2-2 → 1-1-1-1 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch justify-items-center">
           {items.map((item, index) => {
             const isRecommended = item.recommended === true || String(item.recommended).toLowerCase() === 'true';
             const isSelected = selectedPackage === item.titel;
@@ -61,7 +61,7 @@ const ProductSection = ({ sectionName, items, sectionStyle, setSelectedPackage, 
             return (
               <div 
                 key={index} 
-                className={`flex flex-col relative bg-white rounded-[2.5rem] p-10 transition-all duration-500 hover:-translate-y-3 group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm ${
+                className={`flex flex-col relative bg-white rounded-[2.5rem] p-10 w-full max-w-sm transition-all duration-500 hover:-translate-y-3 group ${
                   isSelected
                   ? 'shadow-[0_20px_60px_-15px_rgba(245,158,11,0.3)] border-4 border-accent ring-8 ring-accent/5 scale-105 z-30'
                   : (isRecommended 
