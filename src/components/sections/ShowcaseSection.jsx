@@ -35,16 +35,31 @@ const ShowcaseSection = ({ sectionName, items, sectionStyle, data: allData }) =>
       const repos = await response.json();
       
       const excludeList = ['athena-x', 'athena'];
-      
+      const system = allData?._system || [];
+      const currentRepo = system.find(s => s.Key === 'github_repo_name')?.Value || 'athena-hub';
+
+      // Showcase-links (alle items, ook de niet-zichtbare) → dubbels uit het archief halen
+      const showcaseLinks = (items || [])
+        .map(i => (typeof i.link === 'object' ? i.link?.url : i.link))
+        .filter(u => typeof u === 'string' && u.startsWith('http'))
+        .map(u => u.replace(/\/+$/, ''));
+
       const filteredData = repos
-        .filter(repo => !repo.fork && !excludeList.includes(repo.name)) 
+        .filter(repo => !repo.fork && !excludeList.includes(repo.name))
+        .filter(repo => repo.name !== currentRepo)
         .map(repo => ({
           name: repo.name.replace(/-/g, ' '),
           type: repo.language || 'Project',
           description: repo.description || 'Geen omschrijving beschikbaar.',
           githubLink: repo.html_url,
           liveLink: repo.has_pages ? `https://${org}.github.io/${repo.name}/` : repo.homepage
-        }));
+        }))
+        // Geen project dat al in de Showcase-grid staat (vangt ook -v10/-final varianten)
+        .filter(project => {
+          if (!project.liveLink || !project.liveLink.startsWith('http')) return true;
+          const link = project.liveLink.replace(/\/+$/, '');
+          return !showcaseLinks.some(sl => link.startsWith(sl) || sl.startsWith(link));
+        });
 
       setArchiveData(filteredData);
       setShowArchive(true);
