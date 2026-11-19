@@ -21,11 +21,11 @@
     "image": "hero-1770476346310.jpeg"
   },
   {
-    "name": "Academy 1",
-    "category": "Educatie",
-    "description": "Een modern leerplatform voor cursussen en trainingen.",
-    "link": "https://athena-cms-factory.github.io/academy-1",
-    "image": "b9367654-49e1-48f6-a95b-0c4e9f4308c6.jpg"
+    "name": "Karel Portfolio",
+    "category": "Portfolio",
+    "description": "Persoonlijke portfolio-site met een sterk mobiel ontwerp en vlotte laadtijd.",
+    "link": "https://athena-cms-factory.github.io/karel-portfolio-v9",
+    "image": "showcase-karel-portfolio-v9.webp"
   },
   {
     "name": "De Schaar",
